@@ -8,3 +8,4 @@ have no line, which is most weeks.
 - 2025-01-21 — a frame is a few hundred bytes of jsonl at 30 fps. the radio will not notice.
 - 2025-02-06 — moved the encoder out of the bridge for good today; two imports turned out to only make sense over there.
 - 2025-02-20 — calibration is two sessions and a division; the hard part is admitting the quiet session is noisy.
+- 2025-03-18 — auto-exposure is a motion source. added it to the failure table.
