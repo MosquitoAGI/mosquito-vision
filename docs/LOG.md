@@ -11,3 +11,4 @@ have no line, which is most weeks.
 - 2025-03-18 — auto-exposure is a motion source. added it to the failure table.
 - 2025-04-01 — the ascii view is 40 columns and oddly readable on the robot console.
 - 2025-04-22 — tried three phone clips through the pipeline. the encoder does not care where the frames come from, which is the point.
+- 2025-05-02 — thirty packets is the minimum honest calibration. fewer and you calibrate your own breathing; the tool now says so.
