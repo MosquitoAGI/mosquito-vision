@@ -15,3 +15,4 @@ have no line, which is most weeks.
 - 2025-05-16 — moved the desk lamp; the vignette changed and the coverage numbers moved with it. scene first, maths later.
 - 2025-05-30 — week off the project. came back, read the summary output, understood it instantly. good sign.
 - 2025-06-14 — argued with myself about `coverage_growth` vs `expansion`. growth won, because the brain side already says expansion.
+- 2025-06-28 — the cheap tripod wobbles at the 0.3 g level. the motion channel sees it. noted for the real rig.
