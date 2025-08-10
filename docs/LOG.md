@@ -18,3 +18,4 @@ have no line, which is most weeks.
 - 2025-06-28 — the cheap tripod wobbles at the 0.3 g level. the motion channel sees it. noted for the real rig.
 - 2025-07-12 — sparklines in the terminal beat a plot for a quick look. kept both.
 - 2025-07-26 — made the reader refuse unknown channels instead of skipping them. loud beats silent.
+- 2025-08-10 — two laptops, same clip, same numbers to three decimals. good.
