@@ -19,3 +19,4 @@ have no line, which is most weeks.
 - 2025-07-12 — sparklines in the terminal beat a plot for a quick look. kept both.
 - 2025-07-26 — made the reader refuse unknown channels instead of skipping them. loud beats silent.
 - 2025-08-10 — two laptops, same clip, same numbers to three decimals. good.
+- 2025-08-24 — rewrote the summary line four times. it is one line and it matters.
