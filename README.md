@@ -5,7 +5,7 @@
 **The front end: camera frames in, sensory numbers out.**
 
 ![Python 3.11+](https://img.shields.io/badge/Python-3.11%2B-79cce8?style=flat-square)
-![Tests](https://img.shields.io/badge/tests-31_passing-38c172?style=flat-square)
+![Tests](https://img.shields.io/badge/tests-38_passing-38c172?style=flat-square)
 [![License: MIT](https://img.shields.io/badge/License-MIT-60dfb3?style=flat-square)](LICENSE)
 
 </div>
