@@ -1,8 +1,8 @@
 """The encoder.
 
-    frame -> grayscale -> resize -> blur -> {flow halves, coverage, growth}
+    frame -> grayscale -> resize -> blur -> {flow halves, coverage, centroid}
 
-Four channels, no state beyond the previous frame. The transform order matters
+Six channels, no state beyond the previous frame. The transform order matters
 and is fixed; changing it changes the numbers in every recorded packet, which is
 why it lives in one function rather than in a chain of flags.
 """
@@ -87,6 +87,15 @@ class OpticalEncoder:
         dy[1:, :] = diff[1:, :]
         return dx, dy
 
+    def _centroid(self, mask: np.ndarray) -> tuple[float, float]:
+        count = int(mask.sum())
+        if count < self.settings.centroid_min_pixels:
+            return 0.0, 0.0
+        ys, xs = np.nonzero(mask)
+        cx = float(xs.mean()) / (self.settings.width / 2.0) - 1.0
+        cy = float(ys.mean()) / (self.settings.height / 2.0) - 1.0
+        return float(np.clip(cx, -1.0, 1.0)), float(np.clip(cy, -1.0, 1.0))
+
     # ----------------------------------------------------------------- update
     def update(self, frame: np.ndarray) -> dict[str, float]:
         gray = self._prepare(frame)
@@ -96,6 +105,9 @@ class OpticalEncoder:
         if self._prev is None:
             result = {name: 0.0 for name in CHANNELS}
             result["coverage"] = coverage
+            if mask is not None:
+                cx, cy = self._centroid(mask)
+                result["centroid_x"], result["centroid_y"] = cx, cy
             self._prev = gray
             self._prev_coverage = coverage
             self.frames += 1
@@ -107,6 +119,7 @@ class OpticalEncoder:
         left = float(magnitude[:, :half].mean()) * self.settings.motion_gain
         right = float(magnitude[:, half:].mean()) * self.settings.motion_gain
         growth = (coverage - float(self._prev_coverage or 0.0)) * self.settings.growth_gain
+        cx, cy = self._centroid(mask) if mask is not None else (0.0, 0.0)
 
         self._prev = gray
         self._prev_coverage = coverage
@@ -118,4 +131,6 @@ class OpticalEncoder:
             "right_motion": clip(right),
             "coverage": coverage,
             "coverage_growth": clip(growth),
+            "centroid_x": cx,
+            "centroid_y": cy,
         }
