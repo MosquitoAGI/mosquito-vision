@@ -20,3 +20,4 @@ have no line, which is most weeks.
 - 2025-07-26 — made the reader refuse unknown channels instead of skipping them. loud beats silent.
 - 2025-08-10 — two laptops, same clip, same numbers to three decimals. good.
 - 2025-08-24 — rewrote the summary line four times. it is one line and it matters.
+- 2025-09-23 — the sweep presets got real names tonight: quiet, left, right, both, loom. the old ones were my initials and a number.
