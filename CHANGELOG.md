@@ -3,6 +3,11 @@
 All notable changes to this project are recorded here. Dates live in the
 build log (docs/LOG.md); versions live here.
 
+## [0.3.0]
+
+- Added the `centroid_x` / `centroid_y` channels to the encoder.
+- Added the `--sweep` presets.
+
 ## [0.2.0]
 
 - Added the CLI (`run`, `summary`, `replay`), JSONL export and the

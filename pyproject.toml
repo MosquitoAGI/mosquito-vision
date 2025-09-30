@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "fruitfly-vision"
-version = "0.2.0"
+version = "0.3.0"
 description = "Sensory front end: camera frames in, small fixed-width sensory packets out"
 readme = "README.md"
 license = { text = "MIT" }
