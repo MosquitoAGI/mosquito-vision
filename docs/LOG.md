@@ -22,3 +22,4 @@ have no line, which is most weeks.
 - 2025-08-24 — rewrote the summary line four times. it is one line and it matters.
 - 2025-09-23 — the sweep presets got real names tonight: quiet, left, right, both, loom. the old ones were my initials and a number.
 - 2025-10-12 — desk cleaned, camera re-aimed, baseline re-recorded. the sweep numbers shifted and that is honest.
+- 2025-10-24 — wrote a loom scene fixture with a fixed growth curve; three tests came out of it.
