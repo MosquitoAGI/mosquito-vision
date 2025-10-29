@@ -1,0 +1,4 @@
+# field defaults for a run
+size: 32x32
+gamma: 1.0
+repeats: 8
