@@ -24,3 +24,4 @@ have no line, which is most weeks.
 - 2025-10-12 — desk cleaned, camera re-aimed, baseline re-recorded. the sweep numbers shifted and that is honest.
 - 2025-10-24 — wrote a loom scene fixture with a fixed growth curve; three tests came out of it.
 - 2025-11-27 — considered calling this 'optical flow toolkit'. it is not that and I am glad it is not that.
+- 2025-12-10 — re-ran the demo before tagging 0.3.1. it still does what the changelog says.
