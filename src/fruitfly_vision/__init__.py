@@ -4,7 +4,7 @@ Frames in, six named channels out. No detection, no tracking, no labels: the
 consumer of these packets decides what they mean.
 """
 
-__version__ = "0.3.0"
+__version__ = "0.3.1"
 
 CHANNELS: tuple[str, ...] = (
     "left_motion",

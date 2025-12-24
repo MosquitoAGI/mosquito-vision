@@ -3,6 +3,12 @@
 All notable changes to this project are recorded here. Dates live in the
 build log (docs/LOG.md); versions live here.
 
+## [0.3.1]
+
+- `calibrate` refuses sessions shorter than 30 packets instead of writing a
+  calibration built on noise.
+- Documented the two refusals in `docs/CALIBRATION.md`.
+
 ## [0.3.0]
 
 - Added the `centroid_x` / `centroid_y` channels to the encoder.
