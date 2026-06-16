@@ -2,6 +2,11 @@
 
 All notable changes to this module. Dates in YYYY-MM-DD.
 
+## 0.3.0 — 2026-06-16
+- 48x48 field preset behind a config flag
+- fix: divide-by-zero on blank frames
+- ascii field dump tool
+
 ## 0.2.0 — 2026-01-09
 - gamma option for washed-out pages
 - config.yaml for run defaults
