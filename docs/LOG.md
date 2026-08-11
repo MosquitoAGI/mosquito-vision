@@ -27,3 +27,4 @@ have no line, which is most weeks.
 - 2025-12-10 — re-ran the demo before tagging 0.3.1. it still does what the changelog says.
 - 2026-03-27 — a ten minute session is about 3 MB of jsonl. compression is a later problem.
 - 2026-07-27 — checked every number in the readme against the summary output. two were stale; both fixed.
+- 2026-08-11 — quiet evening: readme for people who are not me, gif re-rendered, tests green. going out.
