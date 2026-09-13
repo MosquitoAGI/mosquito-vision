@@ -28,3 +28,4 @@ have no line, which is most weeks.
 - 2026-03-27 — a ten minute session is about 3 MB of jsonl. compression is a later problem.
 - 2026-07-27 — checked every number in the readme against the summary output. two were stale; both fixed.
 - 2026-08-11 — quiet evening: readme for people who are not me, gif re-rendered, tests green. going out.
+- 2026-09-13 — final pass done. this package is small and it is honest about being small.
